@@ -274,12 +274,21 @@ header .mobile {
   #features-section {
     flex-flow: column;
     padding: 0;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+@media only screen and (max-width: 480px) {
+  #features-section {
+    padding: 0 auto;
+}
+.feature {
+  height: auto;
 }
 
 /* Filters Section */
@@ -380,9 +389,12 @@ header .mobile {
   }
 
   #quotes-section quote-citation {
-    display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+  #quotes-section img {
+    display: block;
+    margin: 0.5rem auto;
   }
 }
 
